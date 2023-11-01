@@ -18,7 +18,7 @@ header {
 .mountain1 {
     position: absolute;
     bottom: -100px;
-    width: 1400px;
+    width: 1450px;
     right: 0;
     z-index: 20;
 }
@@ -29,4 +29,11 @@ header {
     bottom: -100px;
     left: -60px;
     z-index: 21;
+}
+
+.trees-sunset-sky {
+    position: absolute;
+    width: 2050px;
+    bottom: 280px;
+    right: 0;
 }
