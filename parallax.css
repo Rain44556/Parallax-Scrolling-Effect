@@ -149,6 +149,7 @@ section .container>* {
 
 .content {
     color: aliceblue;
+    transform: translateY(-50px);
 }
 
 .content h3 {
