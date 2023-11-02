@@ -65,6 +65,13 @@ nav {
     background: linear-gradient(to bottom 0, 0, 0, 05), transparent;
 }
 
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .logo {
     color: blue;
     font-size: 16px;
@@ -80,7 +87,7 @@ nav {
 .hamburger-menu {
     width: 20px;
     height: 17px;
-    background-color: burlywood;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -90,7 +97,7 @@ nav {
 .bar {
     width: 18px;
     height: 5px;
-    background-color: rgb(5, 5, 4);
+    background-color: white;
     border-radius: 3px;
     position: relative;
 }
@@ -99,7 +106,18 @@ nav {
 .bar:after {
     content: '';
     position: absolute;
-    width: 18px;
-    height: 16px;
-    background-color: black;
+    width: 25px;
+    height: 3px;
+    right: 0;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.bar:before {
+    transform: translateY(-8px);
+
+}
+
+.bar:after {
+    transform: translateY(8px);
 }
