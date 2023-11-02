@@ -135,3 +135,41 @@ nav .container {
     top: calc(50% -32px);
     width: 100%;
 }
+
+section {
+    width: 100%;
+    background-color: gray;
+}
+
+section .container {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+    min-height: 100vh;
+}
+
+section img {
+    width: 100%;
+}
+
+.content {
+    color: aliceblue;
+}
+
+.content-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.bottom-line {
+    width: 40%;
+    height: 5px;
+    position: absolute;
+    background-color: black;
+    left: 0;
+    bottom: 0;
+}
