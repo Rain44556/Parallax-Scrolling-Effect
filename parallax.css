@@ -185,3 +185,7 @@ section img {
     z-index: 22;
     background-color: linear-gradient(to top, #151515, transparent);
 }
+
+.opacity {
+    opacity: 0;
+}

@@ -5,19 +5,23 @@ const shadow = document.querySelector(".shadow");
 const content = document.querySelector(".content");
 const section = document.querySelector("section");
 const img_section = document.querySelector(".imgSection");
-
+const opacity = document.querySelectorAll(".opacity");
 
 let header_height = header.offsetHeight;
 let section_height = section.offsetHeight;
 
 window.addEventListener('scroll',()=>{
     let scroll = window.pageYOffset;
-let sectionY = section.getBoundingClientRect();
+    let sectionY = section.getBoundingClientRect();
 
 
     translate.forEach(element =>{
         let speed = element.dataset.speed;
         element.style.transform = `translateY(${scroll*speed}px)`;
+    });
+
+    opacity.forEach(element =>{
+    element.style.opacity = scroll/(sectionY.top + section_height);
     })
 
     title.style.opacity = -scroll / (header_height/2) +1;
