@@ -138,13 +138,17 @@ section .container {
     min-height: 100vh;
 }
 
+section .container>* {
+    margin: 32px;
+}
+
 section img {
     width: 100%;
     box-shadow: 4px 5px 5px 5px rgb(50, 49, 49);
 }
 
-section .container>* {
-    margin: 32px;
+.imgSection {
+    transform: translateY(50);
 }
 
 .content {
