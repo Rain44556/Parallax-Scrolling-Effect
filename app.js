@@ -6,6 +6,9 @@ const content = document.querySelector(".content");
 const section = document.querySelector("section");
 const img_section = document.querySelector(".imgSection");
 const opacity = document.querySelectorAll(".opacity");
+const bottom_line = document.querySelector(".bottom-line");
+
+
 
 let header_height = header.offsetHeight;
 let section_height = section.offsetHeight;
@@ -28,4 +31,7 @@ window.addEventListener('scroll',()=>{
     shadow.style.height = `${scroll*0.5+350}px`;
     content.style.transform = `translateY(${scroll/(section_height + sectionY.top) * 50-50}px)`;
     img_section.style.transform=`translateY(${scroll/(section_height+sectionY.top) * -50 + 50}px)`;
+bottom_line.style.width = `${scroll/(sectionY.top + section_height) * 27}%`;
+
+
 })
